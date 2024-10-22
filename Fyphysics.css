@@ -1,0 +1,158 @@
+/* Reset and General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: transparent;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #FF407D;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+   
+}
+
+nav ul li {
+    font-size: 1.3rem;
+    margin-right: 20px;
+   
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+   border-bottom: solid 1px #022960;
+}
+
+nav form input {
+    width: 25rem;
+    padding: 0.50rem;
+    border: none;
+    border-radius: 0.50rem;
+    background-color: #fff;
+    color: #333;
+}
+form input {
+    font-size: 1.1rem;
+}
+
+nav form button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #40679e;
+    border: solid 1px #022960;
+    color: #fff;
+    margin-left: 0.5rem;
+    margin-right:4rem;
+}
+
+nav form button:hover {
+    background-color: #FF407D;
+}
+
+/* Header Styles */
+#header1 {
+    background-color: #40679E;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#header1 h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+#header1 p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Main Styles */
+.main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main h2 {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.main ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main li {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.main a {
+    display: block;
+    background-color: #1B3C73;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main a:hover {
+    background-color: #444;
+}
+.footer {
+    background-color: #EE4266;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+#resources{
+    flex-basis: 100%;
+
+}
+
+

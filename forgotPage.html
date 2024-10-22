@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Syllabus</title>
+    <link rel="stylesheet" href="forgotpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="head">
+            <img src="LOGO.png" alt="">
+        </div>
+        <form action="/search" method="get">
+            <div class="searchbar">
+                <input type="text" name="query" placeholder="Search . . .">
+            </div>
+        </form>
+        <ul>
+            <li><a href="mainIndex.html">Home</a></li>
+            <li><a href="#services">Class</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#footer">Contact</a></li>
+
+            <div class="btn">
+                <a href="LoginPage.html"><button>Login</button></a>
+            </div>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- navbar finish -->
+
+    <!-- forget page creation -->
+ <main>
+    <div class="forgetdiv">
+
+        <div class="heading-foget">
+            <h1>Forgot Password </h1>
+        </div>
+
+        <div class="forgetContainer">
+
+            <div class="centericon">
+                <i class="fa-solid fa-key"></i>
+            </div>
+
+            <div class="forgetinput">
+                <label for="PhoneNumber">Enter Phone No:</label>
+                <input type="tel" id="PhoneNumber" name="phone" placeholder="Phone No.">
+                <span class="error" id="phoneError"></span>
+                <button class="btnOTP" onclick="showOTP()">Generate OTP</button>
+            </div>
+
+            <div class="otp-section">
+                <div class="input-otps">
+                    <input type="text" maxlength="1" class="otp-input" required>
+                    <input type="text" maxlength="1" class="otp-input" required>
+                    <input type="text" maxlength="1" class="otp-input" required>
+                    <input type="text" maxlength="1" class="otp-input" required>
+                    <div class="verify"><i class="fa-solid fa-circle-check"></i></div>
+                </div>
+
+                <div class="verify-button">
+                    <button id="lastverified" onclick="verified()">Verify</button>
+                </div>
+
+            </div>          
+        </div>
+
+        <div class="img-forget">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/forgot-password-4718234-3916134.png" alt="">
+        </div>
+
+    </div> 
+</main>
+    <script src="Forgotpage.js"></script>  
+</body>
+</html>

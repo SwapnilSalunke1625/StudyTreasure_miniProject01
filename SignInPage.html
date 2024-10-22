@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="SignInPage.css">
+
+</head>
+
+<body>
+  
+    <div class="container">      
+        <div class="logo">
+            <img src="LOGO.png" alt="Logo" srcset="">
+            <h1>Registration</h1>
+        </div>
+
+ 
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <div class="input-container">
+                <i class="icon fas fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <span class="error" id="nameError"></span>
+                <span id="nameFlag"></span>
+            </div>
+
+            <div class="input-container">
+                <i class="icon fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <span class="error" id="emailError"></span>
+                <span id="emailFlag"></span>
+            </div>
+
+            <div class="input-container">
+                <i class="icon fas fa-phone"></i>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                <span class="error" id="phoneError"></span>
+                <span id="phoneFlag"></span>
+            </div>
+
+       
+            <div class="input-container selection">
+                <select id="branch" name="branch" required>
+                    <option value="engineering" disabled selected>Branch</option>
+                    <option value="cs">CSE</option>
+                    <option value="mech">Mech</option>
+                    <option value="civil">Civil</option>
+                    <option value="ee">ENTC</option>
+                </select>
+                <!-- <span class="error" id="branchError"></span> -->
+                <!-- <span id="branchFlag"></span> -->
+
+                <select id="year" name="year" required>
+                    <option value="year" disabled selected>Year</option>
+                    <option value="first">1st year</option>
+                    <option value="second">2nd year</option>
+                    <option value="third">3rd year</option>
+                    <option value="final">Final year</option>
+                </select>
+                <!-- <span class="error" id="yearError"></span> -->
+                <!-- <span id="yearFlag"></span> -->
+            </div>
+
+            <div class="input-container">
+                <i class="icon fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="error" id="passwordError"></span>
+                <span id="passwordFlag"></span>
+                <div class="strength-text" id="passwordStrengthText"></div>
+            </div>
+            
+            <div class="input-container">
+                <i class="icon fas fa-lock"></i>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+                <span class="error" id="confirm_passwordError"></span>
+                <span id="confirm_passwordFlag"></span>
+            </div>
+            
+
+            <div class="btn">
+                <button type="submit" onclick="validateForm()">Register</button>
+      
+            </div>
+        </form>
+    </div>
+</body>
+<SCript src="SignInPage.js"></SCript>
+
+</html>

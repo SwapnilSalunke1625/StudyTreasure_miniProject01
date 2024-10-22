@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Syllabus</title>
+    <link rel="stylesheet" href="ChoosingYearAll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+     <!-- Nav bar starts... -->
+  <nav id="nav">
+    <div class="head">
+      <img src="LOGO.png" alt="Logo">
+    </div>
+    <form action="/search" method="get">
+      <div class="searchbar">
+        <input type="text" name="query" placeholder="Search . . .">
+      </div>
+    </form>
+    <ul>
+      <li><a href="mainIndex.html">Home</a></li>
+      <li><a href="#services">Class</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#footer">Contact</a></li>
+
+      <div class="btn" id="profile" onclick="openwin()">
+        <div class="img" >
+
+        </div>
+        
+        <!-- <a href="LoginPage.html"><button>Login</button></a> -->
+      </div>
+    </ul>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Main div starts.... -->
+  <div class="maindiv">
+
+    <!--  right side profile section -->
+
+    <div class="profile" id="profilebox">
+      <div class="first-half">
+        <p id="username">Username</p>        
+      </div>
+      <div class="second-half">
+        <div class="img-profile">          
+        </div> 
+        
+      </div>
+      <div class="nameprofile">
+        <h5>Swapnil salunke</h5>
+      </div>
+      <div class="gmailprofile">
+        <p>salunkeswapnil145@gmail.com</p>
+      </div>
+      <div class="tbtn">
+        <button type="submit" id="profilebtn" onclick="closediv()">Logout</button>
+      </div>
+      
+
+    </div>
+    <header id="header1">
+      <h1 id="headname">Engineering</h1>
+      <h1>Syllabus</h1>
+      <p>Welcome to the Engineering Syllabus website. Here, you can find all the syllabus for the engineering
+        program, as well as additional resources to help you succeed in your studies.</p>
+    </header>
+
+    <!-- choosing year starts-->
+
+    <main id="main" class="main">
+
+        <div class="choose-year">
+
+            <div class="year-div" id="fy">
+                <a href="#" onclick="showFirstYearSyllabus()">Fy</a>
+            </div>
+
+            <div class="year-div" id="sy">
+                <a href="#" onclick="showSecondYearSyllabus()">Sy</a>
+            </div>
+
+            <div class="year-div" id="ty">
+                <a href="#" onclick="showThirdYearSyllabus()">Ty</a>
+            </div>
+
+            <div class="year-div" id="final">
+                <a href="#" onclick="showFourthYearSyllabus()">Final</a>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- first year starts -->
+
+    <main id="firstYearSyllabus" class="main1 hidden">
+
+        <!-- subject starts -->
+
+        <div class="subjects">
+
+            <div class="sem1">
+                <div class="sem1-head">
+
+                    <h2>Semester 1</h2>
+
+                </div>
+
+                <div class="sem1-sub">
+
+                    <div class="cp-sub sem1c">
+                        <a href="cpc.html">Eng-EEE </a>
+                    </div>
+
+                    <div class="cp-sub sem1c">
+                        <a href="em1.html">Eng-Maths-1</a>
+                    </div>
+
+                    <div class="cp-sub sem1c">
+                        <a href="chem.html">Communication Skill</a>
+                    </div>
+
+                    <div class="cp-sub sem1c">
+                        <a href="phy.html">Eng-Physics</a>
+                    </div>
+
+                    <div class="cp-sub sem1c">
+                        <a href="eg.html">Eng-Graphics</a>
+                    </div>
+
+                    <div class="cp-sub sem1c">
+                        <a href="">Eng-BCME</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- sem1 finish -->
+
+            <!-- sem2 starts -->
+
+            <div class="sem2">
+
+                <div class="sem-head2">
+                    <h2>Semester 2</h2>
+                </div>
+
+                <div class="sem2-sub">
+
+                    <div class="cp-sub sem2c">
+                        <a href="em2.html">Eng-Maths2</a>
+                    </div>
+
+                    <div class="cp-sub sem2c">
+                        <a href="EEE.html">C Programming </a>
+                    </div>
+
+                    <div class="cp-sub sem2c">
+                        <a href="commu-skill.html">Mechanics</a>
+                    </div>
+
+                    <div class="cp-sub sem2c">
+                        <a href="BEEE.html">Eng-BEEE</a>
+                    </div>
+
+                    <div class="cp-sub sem2c">
+                        <a href="BCME.html">Eng-Chem</a>
+                    </div>
+
+                    <div class="cp-sub sem2c">
+                        <a href="BCME.html">Eng-workshop</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <!-- first year crated -->
+
+
+    <!-- second year starts -->
+
+    <main id="secondYearSyllabus" class="main1 hidden">
+
+        <div class="subjects">
+
+            <div class="sem3">
+                <div class="sem3-head">
+
+                    <h2>Semester 3</h2>
+
+                </div>
+                <div class="sem1-sub">
+
+                    <div class="cp-sub sem3c">
+                        <a href="em2.html">Eng-Maths3</a>
+                    </div>
+
+                    <div class="cp-sub sem3c">
+                        <a href="EEE.html">Electronic Devices & Circuits</a>
+                    </div>
+
+                    <div class="cp-sub sem3c">
+                        <a href="commu-skill.html">Digital Electronics</a>
+                    </div>
+
+                    <div class="cp-sub sem3c">
+                        <a href="BEEE.html">EMAI</a>
+                    </div>
+
+                    <div class="cp-sub sem3c">
+                        <a href="BCME.html">extra</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- sem3 has been created -->
+
+            <!-- sem4 starts -->
+
+            <div class="sem4">
+
+                <div class="sem4-head">
+                    <h2>Semester 4</h2>
+                </div>
+
+                <div class="sem2-sub">
+
+                    <div class="cp-sub sem4c">
+                        <a href="em2.html">Network Theory</a>
+                    </div>
+
+                    <div class="cp-sub sem4c">
+                        <a href="EEE.html">Signals and Systems </a>
+                    </div>
+
+                    <div class="cp-sub sem4c">
+                        <a href="commu-skill.html">Basic Human Rights</a>
+                    </div>
+
+                    <div class="cp-sub sem4c">
+                        <a href="BEEE.html">Probability Theory & RP</a>
+                    </div>
+
+                    <div class="cp-sub sem4c">
+                        <a href="BCME.html">Extra</a>
+                    </div>
+
+                    <!-- <div class="cp-sub sem4c">
+                        <a href="BCME.html"></a>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- third year starts -->
+
+
+    <main id="thirdYearSyllabus" class="main1 hidden">
+        
+        <div class="subjects">
+
+            <div class="sem5">
+                <div class="sem5-head">
+
+                    <h2>Semester 5</h2>
+
+                </div>
+
+                <div class="sem1-sub">
+
+                    <div class="cp-sub sem5c">
+                        <a href="em2.html">Electromagnetic Field Theory</a>
+                    </div>
+
+                    <div class="cp-sub sem5c">
+                        <a href="EEE.html"> Digital Signal Processing </a>
+                    </div>
+
+                    <div class="cp-sub sem5c">
+                        <a href="commu-skill.html">Analog Communication</a>
+                    </div>
+
+                    <div class="cp-sub sem5c">
+                        <a href="BEEE.html">Group A </a>
+                    </div>
+
+                    <div class="cp-sub sem5c">
+                        <a href="BCME.html">Group B</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- sem5 has been created -->
+
+            <!-- sem6 starts -->
+
+            <div class="sem6">
+
+                <div class="sem6-head">
+
+                    <h2>Semester 6</h2>
+                </div>
+
+                <div class="sem2-sub">
+
+                    <div class="cp-sub sem6c">
+                        <a href="em2.html">Antennas and Wave Propagation</a>                      
+                    </div>
+
+                    <div class="cp-sub sem6c">
+                        <a href="EEE.html">Digital Communication</a>
+                    </div>
+
+                    <div class="cp-sub sem6c">
+                        <a href="commu-skill.html">Employability and Skill Dev.</a>
+                    </div>
+
+                    <div class="cp-sub sem6c">
+                        <a href="BEEE.html">Group A</a>
+                    </div>
+
+                    <div class="cp-sub sem6c">
+                        <a href="BCME.html">Group B</a>
+                    </div>
+
+                    <!-- <div class="cp-sub sem4c">
+                        <a href="BCME.html"></a>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- 3rd year has been created -->
+
+    <!-- final year starts -->
+
+    <main id="fourthYearSyllabus" class="main1 hidden">
+
+      <div class="subjects">
+
+        <div class="sem7">
+
+                <div class="sem7-head">
+
+                    <h2>Semester 7</h2>
+                </div>
+
+                <div class="sem2-sub">
+
+                    <div class="cp-sub sem7c">
+                        <a href="em2.html">Microwave Engineering</a>
+                    </div>
+
+                    <div class="cp-sub sem7c">
+                        <a href="EEE.html">Group A</a>
+                    </div>
+
+                    <div class="cp-sub sem7c">
+                        <a href="commu-skill.html">Group B</a>
+                    </div>
+
+                    <div class="cp-sub sem7c">
+                        <a href="BEEE.html">Group C</a>
+                    </div>
+
+                    <div class="cp-sub sem7c">
+                        <a href="BCME.html">EEFM</a>
+                    </div>
+
+                    <!-- <div class="cp-sub sem4c">
+                        <a href="BCME.html"></a>
+                    </div> -->
+
+                </div>
+
+        </div>            
+
+        <!-- sem7 has been created -->
+
+        <div class="sem8">
+
+                <div class="sem8-head">
+
+                    <h2>Semester 8</h2>
+                </div>
+
+                <div class="sem2-sub">
+
+                    <div class="cp-sub sem8c">
+                        <a href="em2.html">Internship</a>
+                    </div>                 
+
+                </div>
+
+         </div>
+      </div>
+        
+    </main>
+
+
+
+    
+
+
+
+<!-- footer starts -->
+<footer id="footer" class="footer">
+
+  <div class="footer-container">
+    <div class="footer-social">
+      <h3>Follow Us</h3><br>
+      <div class="social-icons">
+        <div class="fb-icon">
+          <a href="#" class="social-icon" id="fb"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="twiter-icon">
+          <a href="#" class="social-icon" id="twit"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <div class="insta-icon">
+          <a href="#" class="social-icon" id="insta"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="linkdin-icon">
+          <a href="#" class="social-icon" id="link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 All rights reserved.</p>
+      <p class="designed-name">Designed by </p>
+      <p id="Tags">Vishal & Swapnil</p>
+      <a href="credits.html">Credits</a>
+    </div>
+  </div>
+</footer>>
+
+
+    <script src="ChoosingyearAll.js"></script>
+    <script src="mainindex.js"></script>
+</body>
+
+</html>

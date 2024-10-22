@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Syllabus</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="mainindex.css">
+</head>
+
+<body>
+  <!-- Nav bar starts... -->
+  <nav id="nav">
+    <div class="head">
+      <img src="LOGO.png" alt="Logo">
+    </div>
+    <form action="/search" method="get">
+      <div class="searchbar">
+        <input type="text" name="query" placeholder="Search . . .">
+      </div>
+    </form>
+    <ul>
+      <li><a href="mainIndex.html">Home</a></li>
+      <li><a href="#services">Class</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#footer">Contact</a></li>
+
+      <div class="btn" id="profile" onclick="openwin()">
+        <div class="img" >
+
+        </div>
+        
+        <!-- <a href="LoginPage.html"><button>Login</button></a> -->
+      </div>
+    </ul>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Main div starts.... -->
+  <div class="maindiv">
+
+    <!--  right side profile section -->
+
+    <div class="profile" id="profilebox">
+      <div class="first-half">
+        <p id="username">Username</p>        
+      </div>
+      <div class="second-half">
+        <div class="img-profile">          
+        </div> 
+        
+      </div>
+      <div class="nameprofile">
+        <h5>Swapnil salunke</h5>
+      </div>
+      <div class="gmailprofile">
+        <p>salunkeswapnil145@gmail.com</p>
+      </div>
+      <div class="tbtn">
+        <button type="submit" id="profilebtn" onclick="closediv()">Logout</button>
+      </div>
+      
+
+    </div>
+    <header id="header1">
+      <h1 id="headname">Engineering</h1>
+      <h1>Syllabus</h1>
+      <p>Welcome to the Engineering Syllabus website. Here, you can find all the syllabus for the engineering
+        program, as well as additional resources to help you succeed in your studies.</p>
+    </header>
+
+    <main id="main" class="main">
+      <div class="departments">
+        <div class="branchHeading">
+          <h2>Departments</h2>
+        </div>
+        <div class="branchList">
+          <div class="CSE">
+            <img src="./Assets/Photos/computerSciencePhoto.avif" alt="computer-engineering">
+            <a href="YearChooseCSE.html">Computer Engineering</a>
+          </div>
+
+          <div class="MECH">
+            <img src="./Assets/Photos/MechanicalEngineeringPhoto.avif" alt="">
+            <a href="YearChooseMech.html">Mechanical Engineering</a>
+
+          </div>
+          <div class="AIML">
+            <img src="./Assets/Photos/AIMLEngineeringPhoto.avif" alt="">
+            <a href="YearChooseAIML.html">AIML Engineering</a>
+
+          </div>
+
+          <div class="CIVIL">
+            <img src="./Assets/Photos/CivilEngineeringPhoto.avif" alt="">
+            <a href="YearChooseCivil.html">Civil Engineering</a>
+
+          </div>
+
+          <div class="ENTC">
+            <img src="./Assets/Photos/EandTCengineeringPhoto.avif" alt="">
+            <a href="YearChooseENTC.html" class="Entc-box">Electronics &TC</a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- resources starts -->
+
+      <div class="resources">
+        <div class="resource-heading">
+          <h2>Resources</h2>
+        </div>
+        <div class="resource-list">
+          <a href="/resources/textbooks">Textbooks</a>
+          <a href="/resources/study-guides">Slides/PPT</a>
+          <a href="#">Topper's Notes</a>
+          <a href="Videos.html">Videos/Content</a>
+          <a href="papers.html">Previous year Papers</a>
+          <a href="Resource.html">Guidence/Resource</a>
+        </div>
+      </div>
+
+      <!-- About starts -->
+
+      <div class="About">
+        <h2>About</h2>
+        <p>The engineering program at Dr.Babasaheb Ambedkar Technical University is designed to provide students
+          with a strong foundation in the principles of engineering, as well as practical experience in applying
+          those principles to real-world problems. Our faculty are dedicated to providing a high-quality education
+          that prepares students for successful careers in engineering and related fields.</p>
+      </div>
+
+    </main>
+
+    <!-- footer starts -->
+    <footer id="footer" class="footer">
+
+      <div class="footer-container">
+        <div class="footer-social">
+          <h3>Follow Us</h3><br>
+          <div class="social-icons">
+            <div class="fb-icon">
+              <a href="#" class="social-icon" id="fb"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="twiter-icon">
+              <a href="#" class="social-icon" id="twit"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="insta-icon">
+              <a href="#" class="social-icon" id="insta"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="linkdin-icon">
+              <a href="#" class="social-icon" id="link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 All rights reserved.</p>
+          <p class="designed-name">Designed by </p>
+          <p id="Tags">Vishal & Swapnil</p>
+          <a href="credits.html">Credits</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="mainindex.js"></script>
+</body>
+
+</html>
